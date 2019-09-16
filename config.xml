@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ticinoresidenti.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.ticinoresidenti.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+	 ios-CFBundleVersion="5.0.0">
     
     <name>TicinoResidenTI</name>
     <description>Gruppo residenti nel Canton Ticino</description>
@@ -28,11 +29,7 @@
     <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
     <preference name="android-minSdkVersion"      value="16" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
-
-	<widget id="io.cordova.hellocordova"
-      version="0.0.1"
-      ios-CFBundleVersion="5.0.0">
-		
+	
     <!-- Usage -->
     <preference name="permissions" value="none"/>
     
