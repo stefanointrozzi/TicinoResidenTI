@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plist version="1.0">
+<widget id="com.ticinoresidenti.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+	 ios-CFBundleVersion="5.0.1">
+    
+    <name>TicinoResidenTI</name>
+    <description>Gruppo residenti nel Canton Ticino</description>
+    <author email="ssintrozzi@gmail.com" href="https://www.ticinoresidenti.ch">STEFANO INTROZZI</author>
+	<!--
+        Fix error code 70 ios
+    -->
+	<plist version="1.0">
   <dict>
     <key>compileBitcode</key>
     <false/>
@@ -18,13 +27,6 @@
     <string>iPhone Developer</string>
   </dict>
 </plist>
-<widget id="com.ticinoresidenti.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-	 ios-CFBundleVersion="5.0.1">
-    
-    <name>TicinoResidenTI</name>
-    <description>Gruppo residenti nel Canton Ticino</description>
-    <author email="ssintrozzi@gmail.com" href="https://www.ticinoresidenti.ch">STEFANO INTROZZI</author>
-	
 	<!--
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
