@@ -1,33 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.ticinoresidenti.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-	 ios-CFBundleVersion="5.0.1">
+	 >
     
     <name>TicinoResidenTI</name>
     <description>Gruppo residenti nel Canton Ticino</description>
     <author email="ssintrozzi@gmail.com" href="https://www.ticinoresidenti.ch">STEFANO INTROZZI</author>
-	<!--
-        Fix error code 70 ios
-    -->
-	<plist version="1.0">
-  <dict>
-    <key>compileBitcode</key>
-    <false/>
-    <key>method</key>
-    <string>development</string>
-    <key>teamID</key>
-    <string>Z85M8QS329</string>
-    <key>provisioningProfiles</key>
-    <dict>
-      <key>0x7fb23c5eab40</key>
-      <string>b3e327f3-3418-41c5-bceb-61f7cef53dd7</string>
-    </dict>
-    <key>signingStyle</key>
-    <string>manual</string>
-    <key>signingCertificate</key>
-    <string>iPhone Developer</string>
-  </dict>
-</plist>
-	<!--
+	
+		<!--
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
     -->
