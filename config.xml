@@ -47,6 +47,24 @@
 	<array>
 		<string>iOS</string>
 	</array>
+	  <string>Z85M8QS329</string>
+    <key>provisioningProfiles</key>
+    <dict>
+      <key>00008020-001125A12182002E</key>
+      <key>TeamName</key>
+	<string>Stefano Introzzi</string>
+	<key>TimeToLive</key>
+	<integer>365</integer>
+	<key>UUID</key>
+	<string>dab429e3-2a17-4261-bdea-b38fc437bab1</string>
+	<key>Version</key>
+	<integer>1</integer>
+    </dict>
+    <key>signingStyle</key>
+    <string>manual</string>
+    <key>signingCertificate</key>
+    <string>iPhone Developer</string>
+	  Apple Development: Stefano Introzzi (HQV9FNLUJK)
   </dict>
 </plist>
 	<!--
