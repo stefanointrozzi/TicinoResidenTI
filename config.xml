@@ -1,70 +1,89 @@
-	<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ticinoresidenti.app" version="1.0.0">
-<author email="ssintrozzi@gmail.com" href="https://www.ticinoresidenti.ch">STEFANO INTROZZI</author>
-<name>TicinoResidenTI</name>
-<description>Gruppo residenti nel Canton Ticino</description>
+	<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ticinoresidenti.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+	 ios-CFBundleVersion="5.0.1">
+    
+    <name>TicinoResidenTI</name>
+    <description>Gruppo residenti nel Canton Ticino</description>
+    <author email="ssintrozzi@gmail.com" href="https://www.ticinoresidenti.ch">STEFANO INTROZZI</author>
+	<!--
+        Fix error code 70 ios
+    -->
+	<plist version="1.0">
+  <dict>
+    <key>compileBitcode</key>
+    <false/>
+    <key>method</key>
+    <string>development</string>
+    <key>teamID</key>
+    <string>Z85M8QS329</string>
+    <key>provisioningProfiles</key>
+    <dict>
+      <key>0x7fb23c5eab40</key>
+      <string>b3e327f3-3418-41c5-bceb-61f7cef53dd7</string>
+    </dict>
+    <key>signingStyle</key>
+    <string>manual</string>
+    <key>signingCertificate</key>
+    <string>iPhone Developer</string>
+  </dict>
+</plist>
+	<!--
+        Enable individual API permissions here.
+        The "device" permission is required for the 'deviceready' event.
+    -->
+    <feature name="http://api.phonegap.com/1.0/device" />
 
-<preference name="phonegap-version" value="cli-9.0.0" />
-<preference name="StatusBarOverlaysWebView" value="false" />
-<preference name="fullscreen" value="false" />
-<preference name="LoadUrlTimeoutValue" value="70000" />
-<preference name="AutoHideSplashScreen" value="false" />
-<preference name="ShowSplashScreenSpinner" value="false"/>
-<preference name="FadeSplashScreen" value="false"/>
-<preference name="SplashShowOnlyFirstTime" value="false" />
-<preference name="SplashMaintainAspectRatio" value="true" />
-<preference name="DisallowOverscroll" value="true"/>
-<preference name="SuppressesLongPressGesture" value="true" />
-<preference value="none" name="permissions"/>
-	
-<plugin name="cordova-plugin-camera" source="npm"/>
-<plugin name="cordova-plugin-cookiemaster" source="npm"/>
-<plugin name="cordova-plugin-device" source="npm"/>
-<plugin name="cordova-plugin-dialogs" source="npm"/>
-<plugin name="cordova-plugin-file" source="npm"/>
-<plugin name="cordova-plugin-file-opener2" source="git" spec="https://github.com/neptsoft/cordova-plugin-file-opener2"/>
-<plugin name="cordova-plugin-file-transfer" source="npm"/>
-<plugin name="cordova-plugin-geolocation" source="npm"/>
-<plugin name="cordova-plugin-inappbrowser" source="npm"/>
-<plugin name="cordova-plugin-media" source="npm"/>
-<plugin name="cordova-plugin-media-capture" source="npm"/>
-<plugin name="cordova-plugin-network-information" source="npm"/>
-<plugin name="cordova-plugin-secure-key-store" source="npm"/>
-<plugin name="cordova-plugin-splashscreen" source="npm"/>
-<plugin name="cordova-plugin-statusbar" source="npm"/>
-<plugin name="cordova-plugin-whitelist" source="npm"/>
-	
-<allow-intent target="_blank" target="_blank" target="_blank" href="http://*/*"/>
-<allow-intent target="_blank" target="_blank" target="_blank" href="https://*/*"/>
-<allow-intent href="tel:*"/>
-<allow-intent href="sms:*"/>
-<allow-intent href="mailto:*"/>
-<allow-intent href="geo:*"/>
-<allow-navigation href="*" />
-	
-	<platform name="ios">
-    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-        <string>to take pictures/scan barcodes</string>
-    </edit-config>
-    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-        <string>to get pictures</string>
-    </edit-config>
-    <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-        <string>need location access to find things nearby</string>
-    </edit-config>
-</platform>
-<platform name="android">
-    <plugin name="cordova-android-support-gradle-release" source="npm">
-        <variable name="ANDROID_SUPPORT_VERSION" value="28.0.0"/>
-    </plugin>
-</platform>
-<platform name="windows">
-<preference name="windows-appx-target" value="uap" />
-<preference name="windows-target-version" value="10.0" />
-<preference name="windows-arch" value="anycpu" />
-<preference name="WindowsDefaultUriPrefix" value="ms-appx-web://" />
-<preference name="WindowsToastCapable" value="true" />
-</platform>
+    
+    	<!-- Customize your app and platform with the preference element. -->
+    <preference name="phonegap-version"           value="cli-9.0.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
+    <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="webviewbounce"              value="true" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
+    <preference name="prerendered-icon"           value="false" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
+    <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
+    <preference name="ios-statusbarstyle"         value="black-opaque" />   <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="detect-data-types"          value="true" />           <!-- ios: controls whether data types (such as phone no. and dates) are automatically turned into links by the system -->
+    <preference name="exit-on-suspend"            value="true" />          <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="show-splash-screen-spinner" value="false" />           <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+    <preference name="auto-hide-splash-screen"    value="true" />           <!-- ios: if set to false, the splash screen must be hidden using a JavaScript API -->
+    <preference name="disable-cursor"             value="false" />          <!-- blackberry: prevents a mouse-icon/cursor from being displayed on the app -->
+    <preference name="android-minSdkVersion"      value="19" />              <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+    <preference name="android-targetSdkVersion" value="28" />
+    <!-- Usage -->
+    <preference name="permissions" value="none"/>
+    
+<plugin name="cordova-plugin-battery-status" spec="~2.0.3" />
+<plugin name="cordova-plugin-inappbrowser" source="npm" />
+<plugin name="cordova-plugin-camera" spec="~4.1.0" />
+<plugin name="cordova-plugin-contacts" spec="~3.0.1" />
+<plugin name="cordova-plugin-device" spec="~2.0.3" />
+<plugin name="cordova-plugin-dialogs" spec="~2.0.2" />
+<plugin name="cordova-plugin-file" spec="~6.0.2" />
+<plugin name="cordova-plugin-file-transfer" spec="~1.7.1" />
+<plugin name="cordova-plugin-geolocation" spec="~4.0.2" />
+<plugin name="cordova-plugin-globalization" spec="~1.11.0" />
+<plugin name="cordova-plugin-media" spec="~5.0.3" />
+<plugin name="cordova-plugin-media-capture" spec="~3.0.3" />
+<plugin name="cordova-plugin-network-information" spec="~2.0.2" />
+<plugin name="cordova-plugin-splashscreen" spec="~5.0.3" />
+<plugin name="cordova-plugin-vibration" spec="~3.1.1" />
+<plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
+<plugin name="cordova-plugin-whitelist" version="1"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
 
 	<icon src="icon.png" />
 	
