@@ -1,5 +1,5 @@
 	<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ticinoresidenti.app" versionCode="100" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.ticinoresidenti.app" version="1.0.0">
 <author email="ssintrozzi@gmail.com" href="https://www.ticinoresidenti.ch">STEFANO INTROZZI</author>
 <name>TicinoResidenTI</name>
 <description>Gruppo residenti nel Canton Ticino</description>
@@ -16,6 +16,7 @@
 <preference name="DisallowOverscroll" value="true"/>
 <preference name="SuppressesLongPressGesture" value="true" />
 <preference value="none" name="permissions"/>
+	
 <plugin name="cordova-plugin-camera" source="npm"/>
 <plugin name="cordova-plugin-cookiemaster" source="npm"/>
 <plugin name="cordova-plugin-device" source="npm"/>
@@ -32,6 +33,7 @@
 <plugin name="cordova-plugin-splashscreen" source="npm"/>
 <plugin name="cordova-plugin-statusbar" source="npm"/>
 <plugin name="cordova-plugin-whitelist" source="npm"/>
+	
 <allow-intent target="_blank" target="_blank" target="_blank" href="http://*/*"/>
 <allow-intent target="_blank" target="_blank" target="_blank" href="https://*/*"/>
 <allow-intent href="tel:*"/>
