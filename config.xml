@@ -3,29 +3,7 @@
 <author email="ssintrozzi@gmail.com" href="https://www.ticinoresidenti.ch">STEFANO INTROZZI</author>
 <name>TicinoResidenTI</name>
 <description>Gruppo residenti nel Canton Ticino</description>
-<platform name="ios">
-    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
-        <string>to take pictures/scan barcodes</string>
-    </edit-config>
-    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
-        <string>to get pictures</string>
-    </edit-config>
-    <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-        <string>need location access to find things nearby</string>
-    </edit-config>
-</platform>
-<platform name="android">
-    <plugin name="cordova-android-support-gradle-release" source="npm">
-        <variable name="ANDROID_SUPPORT_VERSION" value="28.0.0"/>
-    </plugin>
-</platform>
-<platform name="windows">
-<preference name="windows-appx-target" value="uap" />
-<preference name="windows-target-version" value="10.0" />
-<preference name="windows-arch" value="anycpu" />
-<preference name="WindowsDefaultUriPrefix" value="ms-appx-web://" />
-<preference name="WindowsToastCapable" value="true" />
-</platform>
+
 <preference name="phonegap-version" value="cli-9.0.0" />
 <preference name="StatusBarOverlaysWebView" value="false" />
 <preference name="fullscreen" value="false" />
@@ -61,6 +39,30 @@
 <allow-intent href="mailto:*"/>
 <allow-intent href="geo:*"/>
 <allow-navigation href="*" />
+	
+	<platform name="ios">
+    <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+        <string>to take pictures/scan barcodes</string>
+    </edit-config>
+    <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge">
+        <string>to get pictures</string>
+    </edit-config>
+    <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+        <string>need location access to find things nearby</string>
+    </edit-config>
+</platform>
+<platform name="android">
+    <plugin name="cordova-android-support-gradle-release" source="npm">
+        <variable name="ANDROID_SUPPORT_VERSION" value="28.0.0"/>
+    </plugin>
+</platform>
+<platform name="windows">
+<preference name="windows-appx-target" value="uap" />
+<preference name="windows-target-version" value="10.0" />
+<preference name="windows-arch" value="anycpu" />
+<preference name="WindowsDefaultUriPrefix" value="ms-appx-web://" />
+<preference name="WindowsToastCapable" value="true" />
+</platform>
 
 	<icon src="icon.png" />
 	
