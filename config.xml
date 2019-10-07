@@ -1,41 +1,20 @@
 	<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ticinoresidenti.app" version="1.0.0" xmlns="http://www.w3.org/1999/xhtml" xmlns:gap="http://phonegap.com/ns/1.0"
+<widget id="com.ticinoresidenti.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
 	 ios-CFBundleVersion="5.0.1">
     
     <name>TicinoResidenTI</name>
     <description>Gruppo residenti nel Canton Ticino</description>
-    <author email="ssintrozzi@gmail.com" href="https://www.ticinoresidenti.ch">STEFANO INTROZZI</author>
-	<!--
-        Fix error code 70 ios
-    -->
-	<plist version="1.0">
-  <dict>
-    <key>compileBitcode</key>
-    <false/>
-    <key>method</key>
-    <string>development</string>
-    <key>teamID</key>
-    <string>Z85M8QS329</string>
-    <key>provisioningProfiles</key>
-    <dict>
-      <key>0x7fb23c5eab40</key>
-      <string>b3e327f3-3418-41c5-bceb-61f7cef53dd7</string>
-    </dict>
-    <key>signingStyle</key>
-    <string>manual</string>
-    <key>signingCertificate</key>
-    <string>iPhone Developer</string>
-  </dict>
-</plist>
+    <author email="ssintrozzi@gmail.com" href=
 	<!--
         Enable individual API permissions here.
         The "device" permission is required for the 'deviceready' event.
     -->
     <feature name="http://api.phonegap.com/1.0/device" />
+   <preference name="permissions"                value="none"/>
 
     
     	<!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="cli-9.0.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="cli-8.0.0" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
@@ -71,21 +50,8 @@
 <plugin name="cordova-plugin-vibration" spec="~3.1.1" />
 <plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
 <plugin name="cordova-plugin-whitelist" version="1"/>
-  <allow-intent href="http://*/*"/>
-  <allow-intent href="https://*/*"/>
-  <allow-intent href="tel:*"/>
-  <allow-intent href="sms:*"/>
-  <allow-intent href="mailto:*"/>
-  <allow-intent href="geo:*"/>
-  <platform name="android">
-    <allow-intent href="market:*"/>
-  </platform>
-  <platform name="ios">
-    <allow-intent href="itms:*"/>
-    <allow-intent href="itms-apps:*"/>
-  </platform>
 
-	<icon src="icon.png" />
+  	<icon src="icon.png" />
 	
     <icon src="res/icons/ios/Icon.png" gap:platform="ios" width="57" height="57" />
     <icon src="res/icons/ios/Icon@2x.png" gap:platform="ios" width="114" height="114" />    
@@ -108,6 +74,26 @@
     <gap:splash src="res/screen/ios/Default@2x.png" gap:platform="ios" width="680" height="960" />
     <gap:splash src="res/screen/ios/Deafult-568h-2x.png" gap:platform="ios" width="640" height="1136" />
 
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+    <string>100</string>
+    </gap:config-file>  
+        
     <content src="https://www.ticinoresidenti.ch" />
-    <access origin="*" subdomains="true" />
+    <access origin="*" subdomains="true" />l -->
+
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
 </widget>
