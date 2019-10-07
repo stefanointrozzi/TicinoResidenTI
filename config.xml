@@ -78,10 +78,8 @@
     <string>100</string>
     </gap:config-file>  
         
-    <content src="https://www.ticinoresidenti.ch" />
-    <access origin="*" subdomains="true" />l -->
+    
 
-    <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
@@ -95,5 +93,8 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+	
+	<content src="https://www.ticinoresidenti.ch" />
+    <access origin="*" subdomains="true" />
 
 </widget>
