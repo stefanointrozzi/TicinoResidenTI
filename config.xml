@@ -28,7 +28,7 @@
 <plugin name="cordova-plugin-splashscreen" spec="~5.0.3" />
 <plugin name="cordova-plugin-vibration" spec="~3.1.1" />
 <plugin name="cordova-plugin-statusbar" spec="~2.4.3" />
-<gap:plugin name="pushwoosh-pgb-plugin" source="npm" />
+<plugin name="pushwoosh-pgb-plugin" source="npm" />
 
 	<icon src="icon.png" />
 	
