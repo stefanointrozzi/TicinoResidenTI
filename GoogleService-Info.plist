@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>491168247800-8d4i849ipm10rdrv2o3vv3cruvhcou7n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.491168247800-8d4i849ipm10rdrv2o3vv3cruvhcou7n</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBYdw44dVpugsnnOHbxJ6euAMiHLdxWnyA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>491168247800</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ch.ticinoresidenti.appdemoticinoresidenti</string>
+	<key>PROJECT_ID</key>
+	<string>totemic-fact-226114</string>
+	<key>STORAGE_BUCKET</key>
+	<string>totemic-fact-226114.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:491168247800:ios:c74ecdcd98372b9498b00d</string>
+	<key>DATABASE_URL</key>
+	<string>https://totemic-fact-226114.firebaseio.com</string>
+</dict>
+</plist>

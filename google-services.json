@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "491168247800",
+    "firebase_url": "https://totemic-fact-226114.firebaseio.com",
+    "project_id": "totemic-fact-226114",
+    "storage_bucket": "totemic-fact-226114.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491168247800:android:f4bf6c58675690c698b00d",
+        "android_client_info": {
+          "package_name": "ch.ticinoresidenti.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491168247800-0n90uut1s671sk74f2fqtrr9218ik3ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAlvbYdux05X9R7tOImPqLpj9Vpl0oH9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491168247800-0n90uut1s671sk74f2fqtrr9218ik3ki.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "491168247800-8d4i849ipm10rdrv2o3vv3cruvhcou7n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ch.ticinoresidenti.appdemoticinoresidenti"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
